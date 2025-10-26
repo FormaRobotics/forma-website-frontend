@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/scrollcue.min.css">
+        <link rel="stylesheet" href="assets/css/remixicon.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/dark-theme.css">
+        
+        <title>Forma Robotics</title>
+        <link rel="icon" type="image/png" href="assets/img/icon.png">
+    </head>
+    <body>
+
+        <div class="preloader-area" id="preloader">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <!-- Theme Switcher Start -->
+        <div class="switch-theme-mode">
+            <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <!-- Theme Switcher End -->
+
+        <!-- Custom Cursor -->
+        <div class="cursor"><span class="cursor-text"></span></div>
+        <div class="cursor-inner"></div>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <!-- Navbar Start -->
+                <div class="navbar-area style-two position-relative" id="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-wrapper d-flex justify-content-between align-items-center">
+                            <a href="/" class="navbar-brand" style="width: 150px;">
+                                <img src="assets/img/logo.png" alt="Logo" class="logo-light">
+                                <img src="assets/img/logo.png" alt="Logo" class="logo-dark">
+                            </a>
+                            <div class="menu-area mx-auto">
+                                <div class="overlay"></div>
+                                <nav class="menu">
+                                    <div class="menu-mobile-header">
+                                        <button type="button" class="menu-mobile-arrow bg-transparent border-0"><i class="ri-arrow-left-s-line"></i></button>
+                                        <div class="menu-mobile-title"></div>
+                                        <button type="button" class="menu-mobile-close bg-transparent border-0"><i class="ri-close-line"></i></button>
+                                    </div>
+                                    <ul class="menu-section p-0 mb-0 lh-1">
+                                        <li>
+                                            <a href="javascript:void(0)" class="active">Home &nbsp&nbsp</a>
+                                            
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="javascript:void(0)">Socials<i class="ri-arrow-down-s-fill"></i></a>
+                                            <ul class="menu-subs menu-column-1">
+                                                <li><a href="#">X (Twitter)</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="javascript:void(0)">Crypto<i class="ri-arrow-down-s-fill"></i></a>
+                                            <ul class="menu-subs menu-column-1">
+                                                <li><a href="#">DexScreener</a></li>
+                                                <li><a href="#">DexTools</a></li>
+                                                <li><a href="#">Swap</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Documents</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="javascript:void(0)">Blog<i class="ri-arrow-down-s-fill"></i></a>
+                                            <ul class="menu-subs menu-column-1">
+                                                <li><a href="#">Medium (Soon)</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+                                <div class="option-item">
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <div class="mobile-options position-relative d-lg-none me-3">
+                                            <button class="dropdown-toggle  text-center bg-transparent border-0 p-0 transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                                <i class="ri-more-fill"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-centered mobile-option-list top-1 border-0" data-bs-popper="static">
+                                                <a href="#" class="btn style-three fw-semibold position-relative round-oval">Documentation<span class="position-absolute top-0 end-0 h-100 d-flex flex-column align-items-center justify-content-center"><img src="assets/img/icons/right-arrow-white.svg" alt="Icon"></span></a>
+                                            </div>
+                                        </div>
+                                        <button  class="search-btn bg-transparent border-0 d-flex flex-wrap align-items-center dropdown-toggle text-center p-0 transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img src="assets/img/icons/search.svg" alt="Search Icon">
+                                        </button>
+                                        <div class="search-dropdown dropdown-menu dropdown-menu-right top-1 border-0" data-bs-popper="static">
+                                             <form class="search-popup position-relative" action="#">
+                                                <input type="search" class="form-control text-para" placeholder="Search Here....">
+                                                <button type="submit" class="position-absolute top-0 end-0 h-100 border-0 bg-transparent d-flex flex-column align-items-center justify-content-center"><i class="ri-search-2-line"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option-item d-lg-block d-none">
+                                    <a href="#" class="btn style-three fw-semibold position-relative round-oval">Documentation<span class="position-absolute top-0 end-0 h-100 d-flex flex-column align-items-center justify-content-center"><img src="assets/img/icons/right-arrow-white.svg" alt="Icon"></span></a>
+                                </div>
+                                <div class="option-item d-lg-none">
+                                    <button type="button" class="menu-mobile-trigger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navbar End -->
+
+                <!-- Hero Section Start -->
+                <div class="hero-area style-two bg-f position-relative overflow-hidden round-10 z-1">
+                    <img src="assets/img/hero/section-shape-1.png" alt="Shape" class="section-shape position-absolute bottom-0 start-0 w-100 z-n1">
+                    <span class="blur-text style-one position-absolute z-0">FORMA ROBOTICS</span>
+                    <span class="blur-text style-two position-absolute z-2">SOLUTION</span>
+                    <div class="container-fluid position-relative">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-6">
+                                <div class="hero-content">
+                                    <h6 class="section-subtitle style-two bg_secondary fs-13 fw-semibold ls-1 text-black d-inline-block bg_primary round-oval mb-10" data-cue="slideInUp"><img src="assets/img/icons/lock.svg" alt="Icon">COMMUNITY DRIVEN, POWERED BY COLLABORATION!</h6>
+                                    <h1 class="font-secondary fw-medium text-black"  data-cue="slideInUp" data-delay="300">Open-Source <span class="text_primary fw-bold">Robotic Arm</span> as RaaS</h1>
+                                    <p class="mb-0" data-cue="slideInUp" data-delay="400">Unlocking better precision and efficiency with our smart robotic arms, designed to make automation smoother and more intuitive.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-img-wrap moveContent">
+                            <img src="assets/img/hero/hero.png" alt="Image" class="hero-img d-block position-relative z-1">
+                            <span class="blur-text">AI</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Section End -->
+
+                <!-- About Section Start -->
+                <div class="about-area style-two position-relative z-1 overflow-hidden pt-130 pb-100">
+                    <div class="container">
+                        <div class="row about-row">
+                            <div class="col-lg-3 col-md-5 pe-xxl-5 mb-30" data-cue="slideInUp">
+                                <p class="mb-40">At Forma Robotics, we build intelligent robotic arms; now connected through a decentralized service layer. Inspired by the Latin word forma, meaning "shape" or "structure", we're redefining how automation takes form.</p>
+                                <a href="#" class="btn style-two fw-semibold position-relative round-oval" >Learn More<span class="position-absolute top-0 end-0 h-100 d-flex flex-column align-items-center justify-content-center"><img src="assets/img/icons/right-arrow-white.svg" alt="Icon"></span></a>
+                            </div>
+                            <div class="col-lg-4 col-md-7 mb-30">
+                                <div class="about-img round-10" data-cue="slideInUp">
+                                    <img src="assets/img/about/about-img-2.jpg" alt="Image" class="round-10">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 ps-xxl-5 pe-xxl-4 mb-30">
+                                <span class="section-subtitle style-two fs-13 fw-medium ls-1 d-inline-block bg_secondary text-title round-oval mb-15" data-cue="slideInUp"><img src="assets/img/icons/lock.svg" alt="Icon">ABOUT FORMA</span>
+                                <h2 class="section-title style-one font-secondary fw-medium mb-40" data-cue="slideInUp" data-delay="400">Empowering Businesses With Robotics Automation Solutions Seamlessly</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="move-text style-six overflow-hidden">
+                        <ul class="list-unstyled mb-0">
+                            <li class="position-relative font-secondary">ROBOTIC AS A SERVICE </li>
+                            <li class="position-relative font-secondary">FORMA ROBOTICS </li>
+                            <li class="position-relative font-secondary">ROBOTIC ARM </li>
+                            <li class="position-relative font-secondary">ROBOTIC AS A SERVICE </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- About Section End -->
+
+                <!-- Service Section Start -->
+                <div class="service-area style-one position-relative z-1 pt-130">
+                    <img src="assets/img/section-shape-3.png" alt="Shape" class="section-shapeone position-absolute top-0 end-0 z-0">
+                    <img src="assets/img/section-shape-2.png" alt="Shape" class="section-shape-two position-absolute start-0 z-0">
+                    <div class="container style-one pb-100">
+                        <div class="row">
+                            <div class="col-xl-8 offset-xl-2 col-md-10 offset-md-1 text-center">
+                                <span class="section-subtitle style-two fs-13 fw-medium ls-1 d-inline-block bg_secondary text-title round-oval mb-15"  data-cue="slideInUp"><img src="assets/img/icons/lock.svg" alt="Icon">HOW IT'S DONE</span>
+                                <h2 class="section-title style-one font-secondary fw-medium text-white mb-40 px-xxl-5"  data-cue="slideInUp">Explore How Our Ecosystem Works<br>Tap on each part to learn more</h2>
+                            </div>
+                        </div>
+                        <div class="service-card-wrap style-one">
+                            <div class="service-card style-one position-relative z-1 d-inline-flex flex-wrap align-items-center transition" data-cue="slideInUp">
+                                <span class="service-counter font-secondary">01</span>
+                                <h3 class="fs-18 fw-semibold text-white transition">Build or own a 3D-printed robotic arm using our open designs.</h3>
+                                <a href="#" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                            <div class="service-card style-one active position-relative z-1 d-inline-flex flex-wrap align-items-center transition" data-cue="slideInUp">
+                                <span class="service-counter font-secondary">02</span>
+                                <h3 class="fs-18 fw-semibold text-white transition">Register it as a RaaS Node by staking tokens.</h3>
+                                <a href="#" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                            <div class="service-card style-one position-relative z-1 d-inline-flex flex-wrap align-items-center transition" data-cue="slideInUp">
+                                <span class="service-counter font-secondary">03</span>
+                                <h3 class="fs-18 fw-semibold text-white transition">Users around the world pay tokens to operate your robot remotely.</h3>
+                                <a href="#" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                            <div class="service-card style-one position-relative z-1 d-inline-flex flex-wrap align-items-center transition" data-cue="slideInUp">
+                                <span class="service-counter font-secondary">04</span>
+                                <h3 class="fs-18 fw-semibold text-white transition">Earn rewards as your robot works in the decentralized robotics cloud.</h3>
+                                <a href="#" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-area style-two position-relative z-1 ptb-130">
+                        <div class="container style-one">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="circle-text-wrap position-relative d-flex flex-column justify-content-center align-items-center rounded-circle me-auto">
+                                        <img src="assets/img/circle.png" alt="Image" class="circle-text d-lock mx-auto rotate">
+                                        <img src="assets/img/icons/quote-pink.svg" alt="Icon" class="position-absolute">
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-8 ps-xxl-5 pe-xxl-0">
+                                    <div class="testimonial-slider-two swiper ps-xxl-4">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-card style-two">
+                                                    <p class="font-secondary fw-medium text-title">
+                                                        “Technology evolves fast, and closed systems can quickly become outdated. Open source gives you a future-proof solution by allowing continuous updates, upgrades, and community-driven enhancements.”
+                                                    </p>
+                                                    <div class="client-info-wrap d-flex flex-wrap align-items-center">
+                                                        <div class="client-img rounded-circle">
+                                                        </div>
+                                                        <div class="client-info">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-card style-two">
+                                                    <p class="font-secondary fw-medium text-title">
+                                                        “With open source, you’re not locked into a single way of doing things. Forma Robotics gives you the freedom to customize, adapt, and expand your robotic arms to fit your unique needs. Whether you want to tweak the software or modify the hardware, open source ensures you have full control”
+                                                    </p>
+                                                    <div class="client-info-wrap d-flex flex-wrap align-items-center">
+                                                        <div class="client-img rounded-circle">
+                                                        </div>
+                                                        <div class="client-info">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="testimonial-card style-two">
+                                                    <p class="font-secondary fw-medium text-title">
+                                                        “Open source fuels collaboration. By sharing our designs and software with the community, we invite engineers, developers, and hobbyists worldwide to join us in pushing the boundaries of what robotic arms can do. This shared effort accelerates innovation, sparks new ideas, and helps us all improve faster than any closed system ever could.”
+                                                    </p>
+                                                    <div class="client-info-wrap d-flex flex-wrap align-items-center">
+                                                        <div class="client-img rounded-circle">
+                                                        </div>
+                                                        <div class="client-info">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-btn d-flex flex-wrap align-items-ecnter">
+                                            <button class="prev-btn testimonial-prev border-0 d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                                <img src="assets/img/icons/left-arrow-black.svg" alt="Image">
+                                            </button>
+                                            <div class="testimonial-pagination"></div>
+                                            <button class="next-btn testimonial-next border-0 d-flex flex-column align-items-center justify-content-center rounded-circle">
+                                                <img src="assets/img/icons/right-arrow-black.svg" alt="Image">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Section End -->
+
+                <!-- Data Security Section Start -->
+                <div class="data-section style-one pt-130 pb-100 round-20">
+                    <div class="container style-one">
+                        <div class="row">
+                            <div class="col-xl-8 offset-xl-2 col-md-10 offset-md-1 text-center">
+                                <span class="section-subtitle style-two fs-13 fw-medium ls-1 d-inline-block bg_secondary text-title round-oval mb-15" data-cue="slideInUp"><img src="assets/img/icons/doc.svg" style="width: 12px; height: 15px;" alt="Icon">FEATURES</span>
+                                <h2 class="section-title style-one font-secondary fw-medium mb-40"  data-cue="slideInUp" data-delay="400">If you can 3D print, assemble, or operate a robotic arm, you can become a RaaS Node</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6 mb-30" data-cue="slideInUp">
+                                <div class="data-card style-one bg-f d-flex flex-wrap flex-column text-center round-10">
+                                    <div class="data-logo rounded-circle"><img src="assets/img/arm.webp" alt="Image" class="rounded-circle"></div>
+                                    <h3 class="fs-24 fw-semibold mb-15">Robotics-as-a-Service</h3>
+                                    <p class="mb-0">Instead of owning expensive hardware, users can rent robot time, test code, train AI, or perform tasks remotely.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6" data-cue="slideInUp">
+                                <div class="data-card-img bg-f round-10 mb-30"><img src="assets/img/about/ai-img-1.jpg" alt="Image" class="round-10" style="object-fit: cover; height: 100%;"></div>
+                            </div>
+                            <div class="col-xl-3 col-md-6" data-cue="slideInUp">
+                                <div class="data-card style-two bg_primary round-10 mb-30">
+                                    <div class="data-card-header fs-30 font-secondary fw-semibold d-flex flex-wrap align-items-center mb-15">
+                                        <span class="data-icon d-flex flex-wrap align-items-center justify-content-center rounded-circle"><img src="assets/img/icons/shield-white.svg" alt="Icon"></span>
+                                        <span class="data-header-text text-white">100%</span>
+                                    </div>
+                                    <h3 class="fs-20 fw-bold text-white mb-1">Source Code</h3>
+                                    <p class="text-offwhite mb-0">Everything is shared. From CAD to source codes.</p>
+                                </div>
+                                <div class="data-card style-three bg-white round-10 mb-30">
+                                    <div class="data-card-header fs-30 font-secondary fw-semibold d-flex flex-wrap align-items-center mb-15">
+                                        <span class="data-icon d-flex flex-wrap align-items-center justify-content-center rounded-circle"><img src="assets/img/icons/shield-blue.svg" alt="Icon"></span>
+                                        <span class="data-header-text text-title">Support</span>
+                                    </div>
+                                    <h3 class="fs-20 fw-bold text-title mb-1">1-on-1 Support</h3>
+                                    <p class="mb-0">Get direct help from our team whenever you need it.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 mb-30" data-cue="slideInUp">
+                                <div class="data-card style-four position-relative z-1 bg-f d-flex flex-column align-items-center justify-content-end round-10 text-center">
+                                    <h3 class="fs-20 text-white mb-10">Cross-Platform Support</h3>
+                                    <p class="text-offwhite mb-0">Works smoothly on Linux, Windows, and macOS with minimal setup.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Data Security Section End -->
+
+                <!-- Why Choose Us Section Start -->
+                <div class="wh-area style-two bg_primary position-relative z-1 round-20">
+                    <img src="assets/img/box-shape-2.png" alt="Shape" class="section-shape-one position-absolute bottom-0 start-0 z-n1">
+                    <img src="assets/img/box-shape-3.png" alt="Shape" class="section-shape-two position-absolute top-0 z-n1">
+                    <div class="container-fluid style-one">
+                        <div class="row align-items-center">
+                            <div class="col-xl-5 col-lg-6">
+                                <div class="wh-content mb-md-30">
+                                    <span class="section-subtitle style-two bg_secondary fs-13 fw-medium ls-1 text-black d-inline-block bg_primary round-oval mb-12" data-cue="slideInUp"><img src="assets/img/icons/lock.svg" alt="Icon">RaaS & Blockchain</span>
+                                    <h2 class="section-title style-one font-secondary fw-medium text-white mb-15" data-cue="slideInUp" data-delay="400">How RaaS Works in Our Ecosystem</h2>
+                                    <p class="text-offwhite mb-30" data-cue="slideInUp" data-delay="500">Our system transforms physical robotics into a distributed service layer. Builders manufacture robotic arms from our open-source designs, connect them using our software, and register as RaaS nodes by staking tokens. These nodes become globally available for on-demand use — whether for testing, research, or industrial tasks. Users pay tokens for access, operators earn from uptime, and the protocol automatically redistributes fees across the network. It’s robotics infrastructure — owned by the community.</p>
+                                    <ul class="feature-list d-flex flex-wrap list-unstyled mb-10 w-xxl-75"  data-cue="slideInUp" data-delay="600">
+                                        <li class="position-relative fw-semibold text-white">
+                                            <span class="d-flex flex-column align-items-center justify-content-center rounded-circle"><img src="assets/img/icons/shield-pink.svg" alt="Icon"></span>
+                                            Scalable Across Environments
+                                        </li>
+                                        <li class="position-relative fw-semibold text-white">
+                                            <span class="d-flex flex-column align-items-center justify-content-center rounded-circle"><img src="assets/img/icons/shield-pink.svg" alt="Icon"></span>
+                                            Tokenized Usage and Rewards
+                                        </li>
+                                        <li class="position-relative fw-semibold text-white">
+                                            <span class="d-flex flex-column align-items-center justify-content-center rounded-circle"><img src="assets/img/icons/shield-pink.svg" alt="Icon"></span>
+                                            Blockchain-Powered RaaS Economy
+                                        </li>
+                                        <li class="position-relative fw-semibold text-white">
+                                            <span class="d-flex flex-column align-items-center justify-content-center rounded-circle"><img src="assets/img/icons/shield-pink.svg" alt="Icon"></span>
+                                            Behavior-Based Monitoring
+                                        </li>
+                                        <li class="position-relative fw-semibold text-white">
+                                            <span class="d-flex flex-column align-items-center justify-content-center rounded-circle"><img src="assets/img/icons/shield-pink.svg" alt="Icon"></span>
+                                            3D-Printed Robotic Arm Platform
+                                        </li>
+                                        <li class="position-relative fw-semibold text-white">
+                                            <span class="d-flex flex-column align-items-center justify-content-center rounded-circle"><img src="assets/img/icons/shield-pink.svg" alt="Icon"></span>
+                                            Autonomous Incident Response
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn style-one text-white fw-semibold position-relative round-oval">Explore Our RaaS Solution<span class="position-absolute top-0 end-0 h-100 d-flex flex-column align-items-center justify-content-center"><img src="assets/img/icons/right-arrow-black.svg" alt="Icon"></span></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-6 ps-xxl-5" data-cue="slideInUp" data-delay="400">
+                                <div class="wh-bg bg-f bg-1 round-10"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Why Choose Us Section End -->
+
+                <!-- Feature Section Start -->
+                <div class="container style-one pt-130 pb-100">
+                    <div class="row">
+                        <div class="col-xl-8 offset-xl-2 col-md-10 offset-md-1 text-center px-xxl-5">
+                            <span class="section-subtitle style-two bg_secondary fs-13 fw-medium ls-1 text-black d-inline-block bg_primary round-oval mb-15" data-cue="slideInUp"><img src="assets/img/icons/lock.svg" alt="Icon">OPEN-SOURCE & 3D PRINTED ARM</span>
+                            <h2 class="section-title style-one font-secondary fw-medium text-center mb-40" data-cue="slideInUp" data-delay="400">The Forma's Robotic Arm <br> Engineered from Design to Motion.</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center position-relative z-1">
+                        <img src="assets/img/line-shape.png" alt="Shape" class="feature-card-shape position-absolute top-0 start-0 d-xl-block d-none z-n1">
+                        <div class="col-xxl-3 col-xl-3 col-md-6 pe-xxl-5" data-cue="slideInUp">
+                            <div class="feature-card style-two mb-30">
+                                <div class="feature-icon d-flex flex-column align-items-center justify-content-center position-relative z-1 round-10"><img src="assets/img/icons/ransomeware.svg" alt="Icon" class="transition"></div>
+                                <h3 class="fs-20 fw-semibold">CAD Models</h3>
+                                <p class="mb-0">Every arm begins with professionally crafted CAD models optimized for strength, range, and printability.</p>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-md-6 ps-xxl-5 pe-xxl-4" data-cue="slideInUp">
+                            <div class="feature-card style-two mb-30">
+                                <div class="feature-icon d-flex flex-column align-items-center justify-content-center position-relative z-1 round-10"><img src="assets/img/icons/security.svg" alt="Icon" class="transition"></div>
+                                <h3 class="fs-20 fw-semibold">BoM and 3D Printing</h3>
+                                <p class="mb-0">All parts are listed in a detailed Bill of Materials and 3D-printed with detailed documentation.</p>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-md-6 ps-xxl-5 pe-xxl-4" data-cue="slideInUp">
+                            <div class="feature-card style-two mb-30">
+                                <div class="feature-icon d-flex flex-column align-items-center justify-content-center position-relative z-1 round-10"><img src="assets/img/icons/unlocking.svg" alt="Icon" class="transition"></div>
+                                <h3 class="fs-20 fw-semibold">Assembly</h3>
+                                <p class="mb-0">Mechanical and electronic components are assembled into a fully functional robotic arm.</p>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-md-6 ps-xxl-5 pe-xxl-4" data-cue="slideInUp">
+                            <div class="feature-card style-two mb-30">
+                                <div class="feature-icon d-flex flex-column align-items-center justify-content-center position-relative z-1 round-10"><img src="assets/img/icons/phishing.svg" alt="Icon" class="transition"></div>
+                                <h3 class="fs-20 fw-semibold">Software and Testing</h3>
+                                <p class="mb-0">The arm is powered, calibrated, and tested through Forma’s control software to ensure smooth, reliable operation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature Section End -->
+
+                <!-- Call To Action Section Start -->
+                <div class="cta-area style-two bg-f position-relative z-1 ptb-130 round-20">
+                    <div class="container style-one">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-5 col-md-6 pe-xxl-5 mb-md-30">
+                                <span class="section-subtitle style-two fs-13 fw-medium ls-1 d-inline-block bg_secondary text-title round-oval mb-15" data-cue="slideInUp"><img src="assets/img/icons/lock.svg" alt="Icon">CALL TO ACTION</span>
+                                <h2 class="section-title style-one text-title fw-medium mb-0"  data-cue="slideInUp" data-delay="300">Start Building.<br> Start Training.<br> Start Automating.</h2>
+                            </div>
+                            <div class="col-xxl-6 offset-xxl-1 col-md-6">
+                                <div class="circle-text-wrap rounded-circle position-relative ms-md-auto">
+                                    <span class="bg_primary position-absolute d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                                        <img src="assets/img/icons/up-right-arrow-white.svg" alt="Icon" class="transition">
+                                    </span>
+                                    <img src="assets/img/circle.png" alt="Text Image" class="circle-text d-block mx-auto rotate" style="filter: brightness(0);">
+                                    <a href="#" class="position-absolute top-0 start-0 w-100 h-100 z-1"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Call To Action Section End -->
+
+                <!-- Blog Section Start -->
+                <div class="container style-one pt-130 pb-100">
+                    <div class="row">
+                        <div class="col-xxl-6 offset-xxl-3 col-md-6 offset-md-3 text-center px-xxl-0">
+                            <span class="section-subtitle style-two fs-13 fw-medium ls-1 d-inline-block bg_secondary text-title round-oval mb-15" data-cue="slideInUp"><img src="assets/img/icons/lock.svg" alt="Icon">BLOG & NEWS</span>
+                            <h2 class="section-title style-one fw-medium text-center text-title mb-40 px-xxl-5"  data-cue="slideInUp" data-delay="300">Expert Tips And Trends In Robotics & AI</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xxl-3 col-xl-4 col-md-6" data-cue="slideInUp">
+                            <div class="blog-card style-two img-hover-wrap round-10 mb-30">
+                                <div class="blog-img position-relative img-hover overflow-hidden round-10">
+                                    <img src="assets/img/articles/1.webp" alt="Image" class="transition round-10">
+                                </div>
+                                <div class="blog-info">
+                                    <ul class="blog-metainfo list-unstyled">
+                                        <li>By <a href="#">Abel Rodriguez</a></li>
+                                        <li><a href="#">May 2025</a></li>
+                                    </ul>
+                                    <h3 class="fs-20 fw-semibold"><a href="#" class="text-black link-hover-primary transition">What Is Robotics as a Service (RaaS)?</a></h3>
+                                    <a rel="nofollow" href="https://builtin.com/robotics/robotics-as-a-service-raas" class="link style-two fw-semibold">Read More<i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-md-6" data-cue="slideInUp">
+                            <div class="blog-card style-two img-hover-wrap round-10 mb-30">
+                                <div class="blog-img position-relative img-hover overflow-hidden round-10">
+                                    <img src="assets/img/articles/2.webp" alt="Image" class="transition round-10">
+                                </div>
+                                <div class="blog-info">
+                                    <ul class="blog-metainfo list-unstyled">
+                                        <li>By <a href="#">Zachary Kimball</a></li>
+                                        <li><a href="#">August 2025</a></li>
+                                    </ul>
+                                    <h3 class="fs-20 fw-semibold"><a href="#" class="text-black link-hover-primary transition">What is RaaS? A guide to robot subscriptions</a></h3>
+                                    <a rel="nofollow" href="https://blog.hardfin.com/what-is-robots-as-a-service-raas" class="link style-two fw-semibold">Read More<i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-md-6" data-cue="slideInUp">
+                            <div class="blog-card style-two img-hover-wrap round-10 mb-30">
+                                <div class="blog-img position-relative img-hover overflow-hidden round-10">
+                                    <img src="assets/img/articles/3.jpeg" alt="Image" class="transition round-10">
+                                </div>
+                                <div class="blog-info">
+                                    <ul class="blog-metainfo list-unstyled">
+                                        <li>By <a href="#">Louis Columbus</a></li>
+                                        <li><a href="#">January 2025</a></li>
+                                    </ul>
+                                    <h3 class="fs-20 fw-semibold"><a href="#" class="text-black link-hover-primary transition">10 Ways Robotics-as-a-Service Helps Small Manufacturers Compete</a></h3>
+                                   <a rel="nofollow" href="https://blog.3ds.com/brands/delmia/ten-ways-robotics-as-a-service-helps-small-manufacturers-compete/" class="link style-two fw-semibold">Read More<i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-md-6" data-cue="slideInUp">
+                            <div class="blog-card style-two img-hover-wrap round-10 mb-30">
+                                <div class="blog-img position-relative img-hover overflow-hidden round-10">
+                                    <img src="assets/img/articles/4.webp" alt="Image" class="transition round-10">
+                                </div>
+                                <div class="blog-info">
+                                    <ul class="blog-metainfo list-unstyled">
+                                        <li>By <a href="#">Jonathan Tarud</a></li>
+                                        <li><a href="#">January 2025</a></li>
+                                    </ul>
+                                    <h3 class="fs-20 fw-semibold"><a href="#" class="text-black link-hover-primary transition">Benefits of Having Robots as a Service</a></h3>
+                                   <a rel="nofollow" href="https://www.koombea.com/blog/robotics-as-a-service-raas/" class="link style-two fw-semibold">Read More<i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <!-- Blog Section End -->
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-one bg-black position-relative z-1 pt-130">
+                    <div class="container style-one">
+                        <div class="row justify-content-center mb-40">
+                            <div class="col-lg-2 col-md-6" data-cue="slideInUp">
+                                <div class="footer-widget mb-30" style="width: 150px;">
+                                    <a href="/" class="logo"><img src="assets/img/logo-white.png" alt="Logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget mb-30 ps-xxl-5 ms-xxl-1" data-cue="slideInUp">
+                                    <h3 class="footer-widget-title text-white fs-18 fw-semibold">Quick Links</h3>
+                                    <ul class="footer-menu list-unstyled mb-0">
+                                        <li><a href="#">SolScan</a></li>
+                                        <li><a href="#">Medium</a></li>
+                                        <li><a href="#">Documentation</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 ps-xxl-4 pe-xxl-1" data-cue="slideInUp">
+                                <div class="footer-widget mb-30">
+                                    <h3 class="text-white fs-20 font-secondary fw-medium mb-12">Subscribe To Our Newsletter</h3>
+                                    <form action="#" class="newsletter-form position-relative">
+                                        <input type="email" class="fs-15 w-100 bg-transparent text-white outline-0" placeholder="Enter Your Email">
+                                        <button class="position-absolute bg-transparent border-0 end-0"><img src="assets/img/icons/plane-small.svg" alt="Icon"></button>
+                                    </form>
+                                    <div class="post-share d-flex flex-wrap align-items-center">
+                                        <span class="text-white fw-medium me-2">Follow Us :</span>
+                                        <ul class="social-profile style-one list-unstyled mb-0">
+                                            <li><a href="https://x.com/?lang=en" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-twitter-x-line"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom position-relative overflow-hidden z-1" data-cue="fadIn">
+                        <div class="container-fluid position-relative px-xxl-4" style="display: flex; justify-content: center;">
+                            <div class="footer-big">FORMA</div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <div id="progress-wrap" class="progress-wrap style-one">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+              <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </div>
+
+        <!-- Link of JS files -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/megamenu.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/fslightbox.js"></script>
+        <script src="assets/js/gsap.min.js"></script>
+        <script src="assets/js/scrollTrigger.min.js"></script>
+        <script src="assets/js/lenis.min.js"></script>
+        <script src="assets/js/scrollToPlugin.js"></script>
+        <script src="assets/js/SplitText.min.js"></script>
+        <script src="assets/js/customEase.js"></script>
+        <script src="assets/js/scrollcue.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

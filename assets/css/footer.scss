@@ -1,0 +1,130 @@
+/*---------------------------------
+    Footer CSS 
+-----------------------------------*/
+.footer-area{
+    &.style-one{
+        border-radius: 100px 100px 0 0;
+    }
+    &.style-two{
+        border-radius: 20px 20px 0 0;
+    }
+    .footer-widget{
+        .footer-widget-title{
+            margin-bottom: 22px;
+        }
+        .footer-menu{
+            li{
+                margin-bottom: 11px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                a{
+                    position: relative;
+                    color: rgba(221,221,221,0.8);
+                    &:after{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        content: "";
+                        width: 0;
+                        height: 1px;
+                        background-color: var(--secondaryColor);
+                        transition: var(--transition);
+                        visibility: hidden;
+                        opacity: 0;
+                    } 
+                    &:hover{
+                        color: var(--secondaryColor);
+                        &::after{
+                            width: 100%;
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .contact-info{
+            li{
+                margin-bottom: 8px;
+                color: rgba(255,255,255,0.5);
+                padding-left: 26px;
+                img,i{
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                p,a{
+                    color: rgba(221,221,221,0.6);
+                    &:hover{
+                        color: var(--secondaryColor);
+                    }
+                }
+            }
+        }
+        .newsletter-form{
+            margin-bottom: 105px;
+            input{
+                border: none;
+                padding: 0 0 12px;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+                &::placeholder{
+                    color: rgba(221,221,221,0.8);
+                    opacity: 1;
+                }
+            }
+            button{
+                padding: 0 0 10px 10px;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+    .footer-bottom{
+        padding-bottom: 12px;
+        &:after{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .copyright-text{
+            bottom: 13px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 50px;
+            border: 1px solid rgba(255,255,255,0.49);
+        }
+    }
+}
+// Max width 767px //
+@media only screen and (max-width: 767px) {
+    .footer-area{
+        &.style-one{
+            border-radius: 50px 50px 0 0;
+        }
+        .footer-widget{
+            .newsletter-form{
+                margin-bottom: 30px;
+            }
+        }
+        .footer-bottom{
+            img{
+                min-height: 90px;
+            }
+            .copyright-text{
+                font-size: 14px;
+                bottom: 12px;
+                padding: 6px 40px;
+                line-height: 22px;
+                width:calc(100% - 20px);
+            }
+        }
+    }
+}
